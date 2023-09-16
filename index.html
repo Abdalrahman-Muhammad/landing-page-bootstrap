@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <style>
+      .specialgreen {
+        background-color: #b4dd10 !important;
+      }
+      .specialColor {
+        background-color: #e8e8e8 !important;
+      }
+      .accordion-collapse {
+        transition: height 0.3s ease-in-out; /* Adjust the duration and easing as needed */
+      }
+    </style>
+    <title>bootstrap</title>
+  </head>
+  <body class="bg-secondary-subtle">
+    <div class="container-fluid">
+      <h1 class="h1 fw-bold pt-3 ps-5">The Flower Blog</h1>
+
+      <!--------------------------------- navbar---------------------------->
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary navbar-dark"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#"></a> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav w-100 justify-content-evenly">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Archives</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img
+                    src="./assests/rss.png"
+                    alt=""
+                    class="img-fluid pe-2"
+                  />Subscribe via. RSS</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--------------------------------- navbar---------------------------->
+    <!--------------------------- img------------------------------------ -->
+    <div class="container-md mt-5">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="card text-bg-dark row specialgreen border-0 rounded-4">
+            <div class="col-9 offset-3 p-0">
+              <img
+                src="./assests/intro_flower.png"
+                class="card-img img-fluid rounded-4"
+                alt=""
+              />
+            </div>
+
+            <div class="card-img-overlay p-5 w-50 row overflow-hidden">
+              <h5 class="card-title fs-1 col-sm-6 col-lg-12">
+                Do you love flowers as much as we do?
+              </h5>
+              <p class="card-text opacity-50 col-sm-6 col-lg-12">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------- img------------------------------------ -->
+    <div class="container-md mt-0">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <h2 class="mt-5 h1 fw-bold">This is the title of a blog post</h2>
+          <p class="text-muted leam fs-5 fst-italic py-4">
+            Posted on June 29th 2009 by
+            <a
+              class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover link-secondary"
+              href="#"
+              >Mads Kjaer</a
+            >
+            -
+            <a
+              class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover link-secondary"
+              href="#"
+              >3comment</a
+            >
+          </p>
+          <p class="text-align-justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            euismod tellus eu orci imperdiet nec rutrum lacus blandit. Cras enim
+            nibh, sodales ultricies elementum vel, fermentum id tellus. Proin
+            metus odio, ultricies eu pharetra dictum, laoreet id odio. Curabitur
+            in odio augue. Morbi congue auctor interdum. Phasellus sit amet
+            metus justo. Phasellus vitae tellus orci, at elementum ipsum. In in
+            quam eget diam adipiscing condimentum. Maecenas gravida diam vitae
+            nisi convallis vulputate quis sit amet nibh. Nullam ut velit tortor.
+            Curabitur ut elit id nisl volutpat consectetur ac ac lorem. Quisque
+            non elit et elit lacinia lobortis nec a velit. Sed ac nisl sed enim
+            consequat porttitor.
+          </p>
+          <figure class="mt-5 mb-5">
+            <img src="./assests/flower.png" alt="" class="shadow-lg" />
+            <figcaption class="mt-4">
+              <p class="fst-italic">This is a beautiful flower</p>
+            </figcaption>
+          </figure>
+          <p class="mb-5">
+            Pellentesque ut sapien arcu, egestas mollis massa. Fusce lectus leo,
+            fringilla at aliquet sit amet, volutpat non erat. Aenean molestie
+            nibh vitae turpis venenatis vel accumsan nunc tincidunt. Suspendisse
+            id purus vel felis auctor mattis non ac erat. Pellentesque sodales
+            venenatis condimentum. Aliquam sit amet nibh nisi, ut pulvinar est.
+            Sed ullamcorper nisi vel tortor volutpat eleifend. Vestibulum
+            iaculis ullamcorper diam consectetur sagittis. Quisque vitae mauris
+            ut elit semper condimentum varius nec nisl. Nulla tempus porttitor
+            dolor ac eleifend. Proin vitae purus lectus, a hendrerit ipsum.
+            Aliquam mattis lacinia risus in blandit.
+          </p>
+          <p class="mb-5">
+            This is the title of a blog post Posted on June 29th 2009 by Mads
+            Kjaer - 3 comments Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Proin euismod tellus eu orci imperdiet nec rutrum
+            lacus blandit. Cras enim nibh, sodales ultricies elementum vel,
+            fermentum id tellus. Proin metus odio, ultricies eu pharetra dictum,
+            laoreet id odio. Curabitur in odio augue. Morbi congue auctor
+            interdum. Phasellus sit amet metus justo. Phasellus vitae tellus
+            orci, at elementum ipsum. In in quam eget diam adipiscing
+            condimentum. Maecenas gravida diam vitae nisi convallis vulputate
+            quis sit amet nibh. Nullam ut velit tortor. Curabitur ut elit id
+            nisl volutpat consectetur ac ac lorem. Quisque non elit et elit
+            lacinia lobortis nec a velit. Sed ac nisl sed enim consequat
+            porttitor. Flower This is a beautiful flower Pellentesque ut sapien
+            arcu, egestas mollis massa. Fusce lectus leo, fringilla at aliquet
+            sit amet, volutpat non erat. Aenean molestie nibh vitae turpis
+            venenatis vel accumsan nunc tincidunt. Suspendisse id purus vel
+            felis auctor mattis non ac erat. Pellentesque sodales venenatis
+            condimentum. Aliquam sit amet nibh nisi, ut pulvinar est. Sed
+            ullamcorper nisi vel tortor volutpat eleifend. Vestibulum iaculis
+            ullamcorper diam consectetur sagittis. Quisque vitae mauris ut elit
+            semper condimentum varius nec nisl. Nulla tempus porttitor dolor ac
+            eleifend. Proin vitae purus lectus, a hendrerit ipsum. Aliquam
+            mattis lacinia risus in blandit. Vivamus vitae nulla dolor.
+            Suspendisse eu lacinia justo. Vestibulum a felis ante, non aliquam
+            leo. Aliquam eleifend, est viverra semper luctus, metus purus
+            commodo elit, a elementum nisi lectus vel magna. Praesent faucibus
+            leo sit amet arcu vehicula sed facilisis eros aliquet. Etiam
+            sodales, enim sit amet mollis vestibulum, ipsum sapien accumsan
+            lectus, eget ultricies arcu velit ut diam. Aenean fermentum luctus
+            nulla, eu malesuada urna consequat in. Pellentesque habitant morbi
+            tristique senectus et netus et malesuada fames ac turpis egestas.
+            Pellentesque massa lacus, sodales id facilisis ac, lobortis sed
+            arcu. Donec hendrerit fringilla ligula, ac rutrum nulla bibendum id.
+            Cras sapien ligula, tincidunt eget euismod nec, ultricies eu augue.
+            Nulla vitae velit sollicitudin magna mattis eleifend. Nam enim
+            justo, vulputate vitae pretium ac, rutrum at turpis. Aenean id magna
+            neque. Sed rhoncus aliquet viverra.
+          </p>
+          <hr />
+          <!-- ================================================================ -->
+          <div class="accordion my-5" id="accordionPanelsStayOpenExample">
+            <h2 class="fw-bold mb-3">Comments</h2>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseOne"
+                >
+                  Comment 1
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingOne"
+              >
+                <div class="accordion-body bg-secondary-subtle row">
+                  <div class="col-6">
+                    <a
+                      href=""
+                      class="d-block link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                      >George Washington</a
+                    >
+                    on June 29th 2009 at 23:35
+                  </div>
+                  <div class="col-6">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  Comment 2
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo"
+              >
+                <div class="accordion-body bg-dark-subtle rounded row">
+                  <div class="col-6">
+                    <a
+                      href=""
+                      class="d-block link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                      >George Washington</a
+                    >
+                    on June 29th 2009 at 23:35
+                  </div>
+                  <div class="col-6">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Comment 3
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree"
+              >
+                <div class="accordion-body bg-secondary-subtle row">
+                  <div class="col-6">
+                    <a
+                      href=""
+                      class="d-block link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                      >George Washington</a
+                    >
+                    on June 29th 2009 at 23:35
+                  </div>
+                  <div class="col-6">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================================================================= -->
+          <hr />
+          <!-- ======================================================================= -->
+          <h2 class="fw-bold m-4">Post a Comment</h2>
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-6">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder=""
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >comment</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button class="btn btn-secondary btn-lg border-0 mb-3">
+                post comment
+              </button>
+            </div>
+          </div>
+          <!-- ============================================================================ -->
+        </div>
+        <div class="col-lg-4 d-none d-lg-block specialColor">
+          <ol class="list-group">
+            <li
+              class="list-group-item d-flex justify-content-between align-items-start bg-light mt-5 rounded-4 shadow-lg"
+            >
+              <div class="ms-2 me-auto">
+                <div class="fw-bold h2">Categories</div>
+                <a
+                  href=""
+                  class="d-block link-dark text-center link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover m-3"
+                >
+                  School Subject</a
+                >
+                <a
+                  href=""
+                  class="d-block link-dark text-center link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover m-3"
+                  >Places to eat</a
+                >
+                <a
+                  href=""
+                  class="d-block link-dark text-center link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover m-3"
+                  >playing Sports</a
+                >
+                <a
+                  href=""
+                  class="d-block link-dark text-center link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover m-3"
+                  >Watching TV</a
+                >
+              </div>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-start bg-light mt-0 rounded-4 shadow-lg"
+            >
+              <div class="ms-2 me-auto">
+                <div class="fw-bold h2">Archives</div>
+                <a
+                  href=""
+                  class="d-block link-dark text-center link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover m-3"
+                >
+                  December 2008</a
+                >
+                <a
+                  href=""
+                  class="d-block link-dark text-center link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover m-3"
+                  >January 2009</a
+                >
+                <a
+                  href=""
+                  class="d-block link-dark text-center link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover m-3"
+                  >February 2009</a
+                >
+                <a
+                  href=""
+                  class="d-block link-dark text-center link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover m-3"
+                  >March 2009</a
+                >
+                <a
+                  href=""
+                  class="d-block link-dark text-center link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover m-3"
+                  >April 2009</a
+                >
+                <a
+                  href=""
+                  class="d-block link-dark text-center link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover m-3"
+                  >May 2009</a
+                >
+                <a
+                  href=""
+                  class="d-block link-dark text-center link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover m-3"
+                  >June 2009</a
+                >
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-dark">
+      <div class="row justify-content-evenly">
+        <div class="col-12 col-lg-3">
+          <h2 class="m-4 text-white">About</h2>
+          <p class="m-4 text-white-50">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem unde
+            illo, rerum
+            <a href="" class="text-white-50">assumenda ipsa </a> bcaecati. Amet,
+            quos consectetur voluptates sequi hic eos et officia magnam
+            temporibus dolorem aut, quibusdam quisquam.
+          </p>
+        </div>
+        <div class="col-12 col-lg-3">
+          <h2 class="m-4 text-white">Blogroll</h2>
+          <ul>
+            <li><a href="" class="mt-5 text-white-50">dsfhkfd</a></li>
+            <li><a href="" class="mt-5 text-white-50">dsfhkfd</a></li>
+            <li><a href="" class="mt-5 text-white-50">dsfhkfd</a></li>
+            <li><a href="" class="mt-5 text-white-50">dsfhkfd</a></li>
+            <li><a href="" class="mt-5 text-white-50">dsfhkfd</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3">
+          <div class="col-12 col-lg-3">
+            <h2 class="m-4 text-white">Popular</h2>
+            <ul>
+              <li><a href="" class="mt-5 text-white-50">dsfhkfd</a></li>
+              <li><a href="" class="mt-5 text-white-50">dsfhkfd</a></li>
+              <li><a href="" class="mt-5 text-white-50">dsfhkfd</a></li>
+              <li><a href="" class="mt-5 text-white-50">dsfhkfd</a></li>
+              <li><a href="" class="mt-5 text-white-50">dsfhkfd</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
